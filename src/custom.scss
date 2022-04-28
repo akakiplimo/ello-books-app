@@ -1,0 +1,73 @@
+$primary: #23395d;
+
+* {
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.Page {
+    border: 1px solid $primary;
+    border-radius: 25px;
+    flex: 50%;
+    min-height: 50vh;
+    padding: 5px;
+    position: relative;
+    font-size: 32px;
+
+    .pageNumber {
+        text-align: center;
+        position: absolute;
+        bottom: 2px;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.Nav {
+    margin: 20px;
+}
+
+.Token {
+    text-align: center;
+}
+
+button {
+    background-color: $primary;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    width: 150px;
+
+    &:hover {
+        background-color: #4FA4F4;
+        color: gray;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background-color: grey;
+        &:hover {
+            cursor: default;
+            color: white;
+        }
+    }
+  }
