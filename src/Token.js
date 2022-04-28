@@ -8,7 +8,7 @@ const Token = ({ value, setToken }) => {
         >
           &#8592;
         </button>
-        <p>{value}</p>
+        <h1>{value}</h1>
       </div>
     );
   };
